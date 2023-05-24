@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Upload to Google Drive</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://apis.google.com/js/api.js"></script>
+  </head>
+  <body>
+    <h1>File Upload to Google Drive</h1>
+    <div class="file-upload-container">
+      <input type="file" id="fileInput">
+      <label for="fileInput">Choose File</label>
+      <button onclick="uploadFile()">Upload</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=handleAuthClick"></script>
+  </body>
+</html>
