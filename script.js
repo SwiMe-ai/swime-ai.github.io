@@ -15,7 +15,7 @@ function handleAuthClick() {
     {
       client_id: CLIENT_ID,
       scope: SCOPES,
-      immediate: true,
+      immediate: false,
       redirect_uri: REDIRECT_URI
     },
     handleAuthResult
