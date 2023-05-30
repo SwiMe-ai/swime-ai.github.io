@@ -38,7 +38,7 @@ dashboardModule.config(function($routeProvider) {
  	
  	var SCOPES ='https://www.googleapis.com/auth/drive.file';
  	var CLIENT_ID ='924258763370-vb4af8620mtabrrcsc4o7speg6b5btqn.apps.googleusercontent.com';
- 	var API_KEY = 'AIzaSyA5j7sLOg3G7rKqSZWQH1DV0eRtxZUBRoo';
+ 	var API_KEY = 'AIzaSyChqZRwaJtMFezNwR5LvQs5OgY2N0c57oM';
 
  	$scope.handleAuthClick = function() {
 
