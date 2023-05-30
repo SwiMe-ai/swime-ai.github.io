@@ -1,6 +1,6 @@
 const CLIENT_ID = '924258763370-vb4af8620mtabrrcsc4o7speg6b5btqn.apps.googleusercontent.com';
 const SCOPES = 'https://www.googleapis.com/auth/drive.file';
-const REDIRECT_URI = 'https://swime-ai.github.io/oauth2callback';
+const REDIRECT_URI = 'https://swime-ai.github.io';
 
 // Definition of handleAuthResult() function
 function handleAuthResult(authResult) {
