@@ -49,7 +49,7 @@ dashboardModule.config(function($routeProvider) {
  	};
 
  	function handleAuthResult(authResult) {
-
+		console.log(authResult);
  		if (authResult && !authResult.error) {
  			$scope.isAutherized = true;
  			accessToken = authResult.access_token;
