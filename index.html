@@ -1,19 +1,33 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <title>File Upload to Google Drive</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://apis.google.com/js/api.js"></script>
-  </head>
-  <body>
-    <h1>File Upload to Google Drive</h1>
-    <div class="file-upload-container">
-      <input type="file" id="fileInput">
-      <label for="fileInput">Choose File</label>
-      <button onclick="uploadFile()">Upload</button>
+<head>	
+</head>
+<body>
+
+	<div ng-app="dashboardApp">
+		<div ng-controller="showFiles">
+			<div>
+				<div ng-controller="showFiles" ng-view>
+				  
+				</div>
+			</div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://apis.google.com/js/client.js?onload=handleAuthClick"></script>
-  </body>
+  </div>
+  
+
+
+<script src="https://apis.google.com/js/client.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<script src="angular-google-gapi.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.2.4/ui-bootstrap-tpls.js"></script>
+<link rel="stylesheet" type="text/css" href="main.css">
+<script src="upload.js"></script>
+<script src="ng-upload.js"></script>
+<script src="app.js"></script>
+<script src="driveUtil.js"></script>
+<script type="text/javascript" src="fileDropzone.js"></script>
+
+</body>
 </html>
