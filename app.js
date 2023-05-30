@@ -10,7 +10,7 @@
  var dashboardModule = angular.module('dashboardApp', ['ngUpload','ngAnimate', 'ui.bootstrap',
  	'angular-google-gapi','ngRoute']);
 
-dashboardModule.config(function($routeProvider) {
+dashboardModule.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/login', {
             templateUrl: 'login.html'//,
@@ -22,6 +22,8 @@ dashboardModule.config(function($routeProvider) {
         .otherwise({
             redirectTo: 'login'
         });
+	$locationProvider.html5Mode(true);
+	
 });
 
  // dashboardModule.constant('CLIENT_ID', 
